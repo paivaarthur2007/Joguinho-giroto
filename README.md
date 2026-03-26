@@ -583,6 +583,6 @@ void gousmasWar()
                         while (getchar() != '\n');
                         jogar = 0;
                         continue;
-
+		}
     } while (jogar == 1);
 }
