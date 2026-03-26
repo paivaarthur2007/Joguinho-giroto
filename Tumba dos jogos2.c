@@ -68,7 +68,7 @@ void respPerguntas()
     do {
         printf("\n====PERGUNTAS E RESPOSTAS!====\n");
 
-        // Pergunta 1
+    
         do {
             printf("\n1) Qual eh a capital do Egito?\n");
             printf("1: Alexandria\n");
