@@ -90,7 +90,7 @@ void respPerguntas()
             printf("Resposta incorreta, a resposta certa era 2: Cairo\n");
         }
 
-        // Pergunta 2
+        
         do {
             printf("\n2) Qual a deidade mais importante para o Egito antigo?\n");
             printf("1: Osiris\n");
@@ -112,7 +112,7 @@ void respPerguntas()
             printf("Resposta incorreta, a resposta certa era 3: Ra\n");
         }
 
-        // Pergunta 3
+        
         do {
             printf("\n3) Quem foi o faraoh mais importante do Egito antigo?\n");
             printf("1: Ramses\n");
@@ -134,7 +134,7 @@ void respPerguntas()
             printf("Resposta incorreta, a resposta certa era 1: Ramses\n");
         }
 
-        // Pergunta 4
+        
         do {
             printf("\n4) Qual era a funcao das piramides no Egito antigo?\n");
             printf("1: Servir como centro comercial e de mercadorias para a populacao egipcia\n");
@@ -156,7 +156,7 @@ void respPerguntas()
             printf("Resposta incorreta, a resposta certa era 3: Serem tumulos monumentais para proteger o corpo do faraoh e seus pertences\n");
         }
 
-        // Pergunta 5
+        
         do {
             printf("\n5) Por que os egipcios tinham a pratica de mumificar corpos?\n");
             printf("1: Pois sua crenca em vida apos a morte os faziam acreditar que a alma voltaria ao corpo\n");
@@ -178,7 +178,7 @@ void respPerguntas()
             printf("Resposta incorreta, a resposta certa era 1: Pois sua crenca em vida apos a morte os faziam acreditar que a alma voltaria ao corpo\n");
         }
 
-        // Menu para jogar novamente
+        
         do {
             printf("\nFim...\n");
             printf("1) Jogar de novo\n");
