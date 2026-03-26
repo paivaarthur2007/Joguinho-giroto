@@ -578,7 +578,11 @@ void gousmasWar()
 
         printf("\n1) Jogar de novo...?\n");
         printf("2) Voltar para a tumba dos jogos...?\n");
-        scanf("%d", &jogar);
+        if (scanf("%d", &jogar) != 1) {
+                        printf("\nEntrada invalida!\n");
+                        while (getchar() != '\n');
+                        jogar = 0;
+                        continue;
 
     } while (jogar == 1);
 }
