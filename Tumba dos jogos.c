@@ -62,141 +62,135 @@ int main()
 
 void respPerguntas()
 {
-    int resposta;
+        int resposta;
     int jogar;
 
     do {
+        printf("\n====PERGUNTAS E RESPOSTAS!====\n");
 
-        printf("\n====PERGUNTAS E RESPOSTAS!====");
+        // Pergunta 1
+        do {
+            printf("\n1) Qual eh a capital do Egito?\n");
+            printf("1: Alexandria\n");
+            printf("2: Cairo\n");
+            printf("3: Gize\n");
+            printf("4: Luxor\n");
+            printf("Escolha uma opcao: ");
 
-        printf("\nPrimeira Pergunta....\n");
-        printf("\n1) Qual eh a capital do egito??\n");
-        printf("1: Alexandria \n");
-        printf("2: Cairo\n");
-        printf("3: Gize\n");
-        printf("4: Luxor\n");
-
-        if (scanf("%d", &resposta) != 1) {
-
-            printf("\nEntrada invalida!\n");
-
-            while (getchar() != '\n');
-
-            resposta = 0;
-            continue;
-        }
+            if (scanf("%d", &resposta) != 1) {
+                printf("Entrada invalida! Digite um numero.\n");
+                while (getchar() != '\n'); // Limpa o buffer
+                resposta = 0;
+            }
+        } while (resposta < 1 || resposta > 4);
 
         if (resposta == 2) {
-            printf("Certa a resposta!\n");
+            printf("Resposta correta!\n");
         } else {
-            printf("Reposta incorreta, a reposta certa era 2: Cairo\n");
+            printf("Resposta incorreta, a resposta certa era 2: Cairo\n");
         }
 
-        printf("\nSegunda Pergunta....\n");
-        printf("\n2) Qual a deidade mais importante para o egito antigo?\n");
-        printf("1: Osiris\n");
-        printf("2: Horus\n");
-        printf("3: Ra\n");
-        printf("4: Anubis\n");
+        // Pergunta 2
+        do {
+            printf("\n2) Qual a deidade mais importante para o Egito antigo?\n");
+            printf("1: Osiris\n");
+            printf("2: Horus\n");
+            printf("3: Ra\n");
+            printf("4: Anubis\n");
+            printf("Escolha uma opcao: ");
 
-        if (scanf("%d", &resposta) != 1) {
-
-            printf("\nEntrada invalida!\n");
-
-            while (getchar() != '\n');
-
-            resposta = 0;
-            continue;
-        }
+            if (scanf("%d", &resposta) != 1) {
+                printf("Entrada invalida! Digite um numero.\n");
+                while (getchar() != '\n');
+                resposta = 0;
+            }
+        } while (resposta < 1 || resposta > 4);
 
         if (resposta == 3) {
-            printf("Certa a resposta!\n");
+            printf("Resposta correta!\n");
         } else {
-            printf("Resposta incorreta, a reposta certa era 3: Ra\n");
+            printf("Resposta incorreta, a resposta certa era 3: Ra\n");
         }
 
-        printf("\nTerceira pergunta....\n");
-        printf("\n3) Quem foi o faraoh mais importante do egito antigo?\n");
-        printf("1: Ramses\n");
-        printf("2: Cleopatra\n");
-        printf("3: Queops\n");
-        printf("4: Narmer\n");
+        // Pergunta 3
+        do {
+            printf("\n3) Quem foi o faraoh mais importante do Egito antigo?\n");
+            printf("1: Ramses\n");
+            printf("2: Cleopatra\n");
+            printf("3: Queops\n");
+            printf("4: Narmer\n");
+            printf("Escolha uma opcao: ");
 
-        if (scanf("%d", &resposta) != 1) {
-
-            printf("\nEntrada invalida!\n");
-
-            while (getchar() != '\n');
-
-            resposta = 0;
-            continue;
-        }
+            if (scanf("%d", &resposta) != 1) {
+                printf("Entrada invalida! Digite um numero.\n");
+                while (getchar() != '\n');
+                resposta = 0;
+            }
+        } while (resposta < 1 || resposta > 4);
 
         if (resposta == 1) {
-            printf("Certa a resposta!\n");
+            printf("Resposta correta!\n");
         } else {
             printf("Resposta incorreta, a resposta certa era 1: Ramses\n");
         }
 
-        printf("\nQuarta Pergunta....\n");
-        printf("\n4) Qual era a funcao das piramides no egito antigo?\n");
-        printf("1: Servir como centro comercial e de mercadorias para a populacao egipcia\n");
-        printf("2: Eram fortalezas militares para proteger as fronteiras do reino\n");
-        printf("3: Serem tumulos monumentais para proteger o corpo do faraoh e seus pertences\n");
-        printf("4: Tinham a funcao de servir como templo divino de devocao e adoracao aos deuses egipcios\n");
+        // Pergunta 4
+        do {
+            printf("\n4) Qual era a funcao das piramides no Egito antigo?\n");
+            printf("1: Servir como centro comercial e de mercadorias para a populacao egipcia\n");
+            printf("2: Eram fortalezas militares para proteger as fronteiras do reino\n");
+            printf("3: Serem tumulos monumentais para proteger o corpo do faraoh e seus pertences\n");
+            printf("4: Tinham a funcao de servir como templo divino de devocao e adoracao aos deuses egipcios\n");
+            printf("Escolha uma opcao: ");
 
-        if (scanf("%d", &resposta) != 1) {
-
-            printf("\nEntrada invalida!\n");
-
-            while (getchar() != '\n');
-
-            resposta = 0;
-            continue;
-
-            if (resposta == 3) {
-                printf("Certa a resposta!\n");
-            } else {
-                printf("Resposta incorreta, a resposta certa era 3: Serem tumulos monumentais para proteger o corpo do faraoh e seus pertences\n");
+            if (scanf("%d", &resposta) != 1) {
+                printf("Entrada invalida! Digite um numero.\n");
+                while (getchar() != '\n');
+                resposta = 0;
             }
+        } while (resposta < 1 || resposta > 4);
+
+        if (resposta == 3) {
+            printf("Resposta correta!\n");
+        } else {
+            printf("Resposta incorreta, a resposta certa era 3: Serem tumulos monumentais para proteger o corpo do faraoh e seus pertences\n");
         }
 
-        printf("\nQuinta e ultima pergunta....\n");
-        printf("\n5) Por que os egicipios tinham a pratica de mumificar corpos?\n");
-        printf("1: Pois sua crenca em vida apos a morte os faziam acreditar que a alma voltaria ao corpo\n");
-        printf("2: Para preserver a aparencia fisica dos mortos, pois era com aquele corpo que eles iriam para o alem\n");
-        printf("3: Garantir que os mortos nao transmitissem doencas para os vivos durante as cerimonias funebres\n");
-        printf("4: Para utilizarem os corpos preservados em rituais de culto ao seus deuses\n");
+        // Pergunta 5
+        do {
+            printf("\n5) Por que os egipcios tinham a pratica de mumificar corpos?\n");
+            printf("1: Pois sua crenca em vida apos a morte os faziam acreditar que a alma voltaria ao corpo\n");
+            printf("2: Para preservar a aparencia fisica dos mortos, pois era com aquele corpo que eles iriam para o alem\n");
+            printf("3: Garantir que os mortos nao transmitissem doencas para os vivos durante as cerimonias funebres\n");
+            printf("4: Para utilizarem os corpos preservados em rituais de culto aos seus deuses\n");
+            printf("Escolha uma opcao: ");
 
-        if (scanf("%d", &resposta) != 1) {
-
-            printf("\nEntrada invalida!\n");
-
-            while (getchar() != '\n');
-
-            resposta = 0;
-            continue;
-        }
+            if (scanf("%d", &resposta) != 1) {
+                printf("Entrada invalida! Digite um numero.\n");
+                while (getchar() != '\n');
+                resposta = 0;
+            }
+        } while (resposta < 1 || resposta > 4);
 
         if (resposta == 1) {
-            printf("Certa a resposta!\n");
+            printf("Resposta correta!\n");
         } else {
             printf("Resposta incorreta, a resposta certa era 1: Pois sua crenca em vida apos a morte os faziam acreditar que a alma voltaria ao corpo\n");
         }
 
-        printf("\nFim...\n");
-        printf("\n1) Jogar de novo...?\n");
-        printf("2) Voltar para a tumba dos jogos...?\n");
+        // Menu para jogar novamente
+        do {
+            printf("\nFim...\n");
+            printf("1) Jogar de novo\n");
+            printf("2) Voltar para a tumba dos jogos\n");
+            printf("Escolha uma opcao: ");
 
-        if (scanf("%d", &jogar) != 1) {
-
-            printf("\nEntrada invalida!\n");
-
-            while (getchar() != '\n');
-
-            jogar = 0;
-            continue;
-        }
+            if (scanf("%d", &jogar) != 1) {
+                printf("Entrada invalida! Digite um numero.\n");
+                while (getchar() != '\n');
+                jogar = 0;
+            }
+        } while (jogar != 1 && jogar != 2);
 
     } while (jogar == 1);
 }
